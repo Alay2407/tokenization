@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Setting"),
         ],
       ),
-      body:  Column(
+      body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Header(),
@@ -65,7 +65,10 @@ class _HomeScreenState extends State<HomeScreen> {
                           size: 40,
                           color: CustomColors.blue,
                         ),
-                        Text('Transfer', style: TextStyle(color: CustomColors.black,fontWeight: FontWeight.bold),),
+                        Text(
+                          'Transfer',
+                          style: TextStyle(color: CustomColors.black, fontWeight: FontWeight.bold),
+                        ),
                       ]),
                     ),
                   ),
@@ -73,7 +76,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 const Padding(
                   padding: EdgeInsets.all(20.0),
                   child: Card(
-
                     // margin: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
@@ -83,7 +85,10 @@ class _HomeScreenState extends State<HomeScreen> {
                           size: 40,
                           color: CustomColors.blue,
                         ),
-                        Text('Pay bill',style: TextStyle(color: CustomColors.black,fontWeight: FontWeight.bold),),
+                        Text(
+                          'Pay bill',
+                          style: TextStyle(color: CustomColors.black, fontWeight: FontWeight.bold),
+                        ),
                       ]),
                     ),
                   ),
@@ -91,7 +96,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 const Padding(
                   padding: EdgeInsets.all(20.0),
                   child: Card(
-
                     // margin: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
@@ -101,7 +105,10 @@ class _HomeScreenState extends State<HomeScreen> {
                           size: 40,
                           color: CustomColors.blue,
                         ),
-                        Text('View History',style: TextStyle(color: CustomColors.black,fontWeight: FontWeight.bold),),
+                        Text(
+                          'View History',
+                          style: TextStyle(color: CustomColors.black, fontWeight: FontWeight.bold),
+                        ),
                       ]),
                     ),
                   ),
@@ -124,7 +131,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.end,
                                       children: [
-                                        Icon(Icons.cancel, size: 28,),
+                                        Icon(
+                                          Icons.cancel,
+                                          size: 28,
+                                        ),
                                       ],
                                     ),
                                   ),
@@ -134,7 +144,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                                 const Padding(
                                   padding: EdgeInsets.only(top: 5),
-                                  child: Text('Ready To Scan', style: TextStyle(fontSize: 30),),
+                                  child: Text(
+                                    'Ready To Scan',
+                                    style: TextStyle(fontSize: 30),
+                                  ),
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.symmetric(vertical: 25),
@@ -145,32 +158,22 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                                 const Padding(
                                   padding: EdgeInsets.symmetric(vertical: 20),
-                                  child: Text('Hold Your Phone Near the Card', style: TextStyle(fontSize: 18),),
+                                  child: Text(
+                                    'Hold Your Phone Near the Card',
+                                    style: TextStyle(fontSize: 18),
+                                  ),
                                 ),
                                 SizedBox(
-                                  width: MediaQuery
-                                      .of(context)
-                                      .size
-                                      .width * 0.9,
+                                  width: MediaQuery.of(context).size.width * 0.9,
                                   height: 60,
                                   child: TextButton(
                                       onPressed: () {
-                                        Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                                builder: (context) => const CardDetailsScreen()));
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => const CardDetailsScreen()));
                                       },
-                                      style: TextButton.styleFrom(
-                                          backgroundColor: CustomColors.blue,
-                                          foregroundColor: CustomColors.white,
-                                          shape: RoundedRectangleBorder(
-                                              borderRadius: BorderRadius.circular(15))),
+                                      style: TextButton.styleFrom(backgroundColor: CustomColors.blue, foregroundColor: CustomColors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))),
                                       child: const Text(
                                         "Scan",
-                                        style: TextStyle(
-                                            fontFamily: "RedHatDisplay",
-                                            fontSize: 18,
-                                            fontWeight: FontWeight.w500),
+                                        style: TextStyle(fontFamily: "RedHatDisplay", fontSize: 18, fontWeight: FontWeight.w500),
                                       )),
                                 ),
                               ],
@@ -183,18 +186,27 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: const Padding(
                     padding: EdgeInsets.all(20),
                     child: Card(
-
                       // margin: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
                       child: Padding(
                         padding: EdgeInsets.all(8.0),
-                        child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.center, children: [
-                          Icon(
-                            Icons.tap_and_play,
-                            size: 40,
-                             color: CustomColors.blue,
-                          ),
-                          Text('Tap to Pay',style: TextStyle(color: CustomColors.black,fontWeight: FontWeight.bold),),
-                        ]),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.tap_and_play,
+                              size: 40,
+                              color: CustomColors.blue,
+                            ),
+                            Text(
+                              'Tap to Pay',
+                              style: TextStyle(
+                                color: CustomColors.black,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
